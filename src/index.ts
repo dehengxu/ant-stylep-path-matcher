@@ -7,9 +7,9 @@
  * @desc class of AntPathMatcher
  */
 class AntPathMatcher {
-  private static getRegPattern = (patternSeg: string) => {
-    if (patternSeg === "*") return "[.]{0,}"; // match zero or more characters
-    if (patternSeg === "**") return "[.|/]{0,}"; // match zero or more derectories
+  private getRegPattern = (patternSeg: string) => {
+    if (patternSeg === "*") return "[\\w]{0,}"; // match zero or more characters
+    if (patternSeg === "**") return "[\\w|/]{0,}"; // match zero or more derectories
     let replacedReg = patternSeg;
     if (replacedReg.includes("?")) {
       // match one character
@@ -29,7 +29,7 @@ class AntPathMatcher {
    * @param path: string
    * @return boolean
    */
-  public static antPathMatch = (antPattern: string, path: string) => {
+  public antPathMatch = (antPattern: string, path: string) => {
     const matchSeg = antPattern.split("/");
     const matchRegs = matchSeg.map((e) => this.getRegPattern(e));
     const regexString = matchRegs.join("/");
