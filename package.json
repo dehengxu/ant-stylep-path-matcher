@@ -1,6 +1,6 @@
 {
   "name": "ant-style-path-matcher",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "a ant style path matcher",
   "main": "dist/umd/index.js",
   "module": "dist/esm/index.js",
