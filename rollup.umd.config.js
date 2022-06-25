@@ -26,7 +26,7 @@ export default {
     {
       file: path.resolve(__dirname, "dist/umd/index.js"),
       format: "umd",
-      name: "rain",
+      name: "antMatcher",
     },
   ],
   plugins: [
