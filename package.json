@@ -8,6 +8,11 @@
     "ant-path",
     "matcher"
   ],
+  "homepage": "https://github.com/sean398/ant-stylep-path-matcher",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sean398/ant-stylep-path-matcher"
+  },
   "scripts": {
     "test": "jest",
     "build": "npm run build:umd && npm run build:esm",

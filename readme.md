@@ -5,10 +5,10 @@ Part of this mapping code has been kindly borrowed from Apache Ant and Spring Fr
 
 The mapping matches URLs using the following rules:
 
-\? match one character
-\* match zero or more characters
-\*\* match zero or more directories in a path
-\{value\} matches the regexp [a-z]+ as a path variable named "spring"
+- \? match one character
+- \* match zero or more characters
+- \*\* match zero or more directories in a path
+- \{value\} matches the regexp [a-z]+ as a path variable named "spring"
 
 ## Install
 
