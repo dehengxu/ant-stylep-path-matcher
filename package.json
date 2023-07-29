@@ -4,6 +4,7 @@
   "description": "a ant style path matcher",
   "main": "dist/umd/index.js",
   "module": "dist/esm/index.js",
+  "type": "module",
   "keywords": [
     "ant-path",
     "matcher"
